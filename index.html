@@ -4,40 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gorilla Summit Coffee | Specialty Coffee from Uganda</title>
-  <meta name="description" content="Premium specialty coffee from the highlands of Uganda. Direct from 3,800 smallholder farmers in Kanungu, Kisoro and Bwindi.">
+  <meta name="description" content="Gorilla Summit Coffee – specialty Arabica and Robusta from 3,800 smallholder farmers in the highlands of Kanungu, Kisoro and Bwindi, Uganda.">
+  <meta property="og:title" content="Gorilla Summit Coffee | Specialty Coffee from Uganda">
+  <meta property="og:description" content="Premium specialty coffee from 3,800 smallholder farmers in the highlands of Kanungu, Kisoro and Bwindi.">
+  <meta property="og:image" content="https://gorillasummitcoffee.com/assets/images/logo.png">
+  <meta property="og:url" content="https://gorillasummitcoffee.com">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
-  <!-- Temporary notice while we finish image upload -->
-  <div style="background:#3E6B35;color:white;text-align:center;padding:12px;font-family:system-ui,sans-serif;font-size:15px">
-    Site is live. Partner logos are being finalised — full images coming in the next few minutes.
-  </div>
-
+  <!-- Header -->
   <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="#" class="logo">
-          <img src="assets/images/logo.png" alt="Gorilla Summit Coffee">
-          <span>Gorilla Summit Coffee</span>
-        </a>
-        <nav class="nav">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <img src="assets/images/logo.png" alt="Gorilla Summit Coffee" class="logo-img" width="52" height="52">
+        <span>Gorilla Summit Coffee</span>
+      </a>
+      <div class="header-right">
+        <nav class="nav" id="main-nav">
           <a href="#about">Our Story</a>
           <a href="#impact">Impact</a>
           <a href="#locations">Locations</a>
           <a href="#partners">Partners</a>
           <a href="#contact">Contact</a>
         </nav>
+        <button class="nav-toggle" aria-label="Toggle menu" id="nav-toggle">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="container hero-content">
       <p class="hero-eyebrow">Specialty Coffee · Uganda</p>
       <h1>From the Highlands<br>to the World</h1>
-      <p class="hero-subtitle">We work with 3,800 smallholder farmers across Kanungu, Kisoro and Bwindi to produce top-rated specialty Arabica and Robusta.</p>
+      <p class="hero-subtitle">We work with 3,800 smallholder farmers across Kanungu, Kisoro and Bwindi to produce top-rated specialty Arabica and Robusta — and put more money back into the communities that grow it.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn">Enquire Now</a>
         <a href="#partners" class="btn btn-outline">Our Partners</a>
@@ -45,47 +53,201 @@
     </div>
   </section>
 
-  <section id="partners" class="section">
+  <!-- About / Story -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Story</h2>
+        <p>Started with a simple mission</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>In 2012 we set out to bring specialty coffee from the highlands of southwest Uganda to the world. The area of Kanungu and its surrounding districts have been producing coffee for generations, yet historically the coffee was sold to middlemen at extremely low prices and labelled for local consumption only.</p>
+          <p>In partnership with groups like Temple Coffee Roasters (Sacramento, CA), we began training local farmers in proper growing and harvesting techniques. Quality improved dramatically. We built a processing facility and started exporting specialty-grade coffee.</p>
+          <p>Today Gorilla Summit Coffee works with over 3,800 smallholder farmers. Improving quality and price goes far beyond the coffee itself — it supports education, better agricultural practices, and stronger communities in the shadow of the mountain gorillas.</p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight">
+            <strong>3,800+</strong>
+            <span>Smallholder farmers</span>
+          </div>
+          <div class="highlight">
+            <strong>Direct trade</strong>
+            <span>Better prices at the farm gate</span>
+          </div>
+          <div class="highlight">
+            <strong>Specialty grade</strong>
+            <span>Arabica & Robusta for export</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact -->
+  <section id="impact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Impact & Community</h2>
+        <p>Coffee that supports people and place</p>
+      </div>
+      <p class="impact-intro">Gorilla Summit Coffee is a social enterprise. Every bag supports better prices for farmers and real community projects in the highlands of southwest Uganda. We align our work with the United Nations Sustainable Development Goals.</p>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <h3>Better prices for farmers</h3>
+          <p>We pay significantly above the local market rate so families can invest in education, health and their farms.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Quality training</h3>
+          <p>Hands-on training in selective harvesting, processing and quality control turns ordinary coffee into specialty coffee.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Community projects</h3>
+          <p>Education support, health initiatives and infrastructure improvements that benefit entire villages.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Conservation link</h3>
+          <p>Working in the buffer zones of Bwindi and the Virungas, we help show that thriving coffee communities can coexist with mountain gorilla habitat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section id="locations" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Locations</h2>
+        <p>From farm to table across the southwest highlands</p>
+      </div>
+      <div class="locations-grid">
+        <article class="location-card">
+          <div class="card-image-placeholder">Kanungu Highlands</div>
+          <h3>Kanungu</h3>
+          <p class="location-tag">Main production heartland</p>
+          <p>Our primary farming communities sit in the rolling hills of Kanungu District, near the borders of Rwanda and the Democratic Republic of Congo. This is where most of our cherries are grown and where our processing facility is based.</p>
+        </article>
+        <article class="location-card">
+          <div class="card-image-placeholder">Kisoro & Lake Mutanda</div>
+          <h3>Kisoro</h3>
+          <p class="location-tag">Volcanic soils · Second largest group</p>
+          <p>Known for Lake Mutanda and the dramatic peaks of the Virunga range. Rich volcanic soil produces distinctive cup profiles. A gateway to gorilla trekking in Mgahinga and Bwindi.</p>
+        </article>
+        <article class="location-card">
+          <div class="card-image-placeholder">Bwindi Forest Edge</div>
+          <h3>Bwindi</h3>
+          <p class="location-tag">Gorilla habitat · Batwa communities</p>
+          <p>On the edge of Bwindi Impenetrable Forest — home to half of the world’s remaining mountain gorillas. High altitude and volcanic soils create excellent conditions for specialty coffee.</p>
+        </article>
+        <article class="location-card">
+          <div class="card-image-placeholder">Kampala HQ</div>
+          <h3>Kampala</h3>
+          <p class="location-tag">Headquarters · Logistics hub</p>
+          <p>Our main offices coordinate exports, quality control and relationships with international buyers while staying connected to the highland farming communities.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section id="partners" class="section section-alt">
     <div class="container">
       <div class="section-header">
         <h2>Our Partners</h2>
         <p>Working with people who believe in quality and community</p>
       </div>
 
-      <div class="partners-logos" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:20px;margin:40px 0">
-        <a href="https://templecoffee.com" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e5e0d5;border-radius:12px;padding:24px;min-height:100px;text-decoration:none;color:#5A3825;font-weight:600">Temple Coffee Roasters</a>
-        <a href="https://panthercoffee.com" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e5e0d5;border-radius:12px;padding:24px;min-height:100px;text-decoration:none;color:#5A3825;font-weight:600">Panther Coffee</a>
-        <a href="https://victrolacoffee.com" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e5e0d5;border-radius:12px;padding:24px;min-height:100px;text-decoration:none;color:#5A3825;font-weight:600">Victrola Coffee</a>
-        <a href="https://sevenvirtuespdx.com" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e5e0d5;border-radius:12px;padding:24px;min-height:100px;text-decoration:none;color:#5A3825;font-weight:600">Seven Virtues</a>
-        <a href="https://atlanticspecialtycoffee.com" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e5e0d5;border-radius:12px;padding:24px;min-height:100px;text-decoration:none;color:#5A3825;font-weight:600">Atlantic Specialty</a>
-        <a href="https://www.undp.org" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e5e0d5;border-radius:12px;padding:24px;min-height:100px;text-decoration:none;color:#5A3825;font-weight:600">UNDP</a>
-        <a href="https://afca.coffee" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #e5e0d5;border-radius:12px;padding:24px;min-height:100px;text-decoration:none;color:#5A3825;font-weight:600">AFCA</a>
+      <div class="partners-logos">
+        <a class="partner-logo-card" href="https://templecoffee.com" target="_blank" rel="noopener" title="Temple Coffee Roasters">
+          <strong style="color:#5A3825;font-size:1.05rem;">Temple Coffee</strong>
+        </a>
+        <a class="partner-logo-card" href="https://panthercoffee.com" target="_blank" rel="noopener" title="Panther Coffee">
+          <strong style="color:#5A3825;font-size:1.05rem;">Panther Coffee</strong>
+        </a>
+        <a class="partner-logo-card" href="https://victrolacoffee.com" target="_blank" rel="noopener" title="Victrola Coffee Roasters">
+          <strong style="color:#5A3825;font-size:1.05rem;">Victrola Coffee</strong>
+        </a>
+        <a class="partner-logo-card" href="https://sevenvirtuespdx.com" target="_blank" rel="noopener" title="Seven Virtues Coffee Roasters">
+          <strong style="color:#5A3825;font-size:1.05rem;">Seven Virtues</strong>
+        </a>
+        <a class="partner-logo-card" href="https://atlanticspecialtycoffee.com" target="_blank" rel="noopener" title="Atlantic Specialty Coffee">
+          <strong style="color:#5A3825;font-size:1.05rem;">Atlantic Specialty</strong>
+        </a>
+        <a class="partner-logo-card" href="https://www.undp.org" target="_blank" rel="noopener" title="United Nations Development Programme">
+          <strong style="color:#5A3825;font-size:1.05rem;">UNDP</strong>
+        </a>
+        <a class="partner-logo-card" href="https://afca.coffee" target="_blank" rel="noopener" title="African Fine Coffees Association">
+          <strong style="color:#5A3825;font-size:1.05rem;">AFCA</strong>
+        </a>
       </div>
 
-      <p style="text-align:center;max-width:700px;margin:0 auto 30px;line-height:1.6">We work closely with <strong>Temple Coffee Roasters</strong> (Sacramento, CA), the African Fine Coffees Association, and the 3,800+ smallholder farmers who are the heart of everything we do.</p>
+      <div class="partners-note">
+        <p>We work closely with <strong><a href="https://templecoffee.com" target="_blank" rel="noopener">Temple Coffee Roasters</a></strong> (Sacramento, CA), the <strong><a href="https://afca.coffee" target="_blank" rel="noopener">African Fine Coffees Association</a></strong>, and the 3,800+ smallholder farmers who are the heart of everything we do.</p>
+      </div>
 
-      <div style="text-align:center">
+      <div class="partners-cta">
+        <p>Interested in becoming a partner or sourcing our coffee?</p>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section" style="background:#f8f4eb">
-    <div class="container" style="text-align:center;padding:60px 20px">
-      <h2>Get in Touch</h2>
-      <p>Enquire about specialty coffee, volumes, pricing & shipping</p>
-      <p style="margin-top:20px">
-        <a href="https://wa.me/256772314778" class="btn" style="margin:8px">WhatsApp Ian</a>
-        <a href="mailto:ian@gorillasummitcoffee.com" class="btn btn-outline" style="margin:8px">Email Ian</a>
-      </p>
-      <p style="margin-top:30px;font-size:14px;color:#666">Samuel Agaba Asiimwe · +256 778 966 385<br>Ian Abigaba · +256 772 314 778<br>info@gorillasummitcoffee.com</p>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-inner">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
+        <p>Enquire about specialty coffee, volumes, pricing & shipping</p>
+      </div>
+      <div class="contact-actions">
+        <a href="https://wa.me/256772314778?text=Hello%20Ian%2C%20I%20am%20interested%20in%20Gorilla%20Summit%20Coffee.%20Please%20share%20details%20on%20volumes%2C%20pricing%20and%20shipping." class="btn" target="_blank" rel="noopener">WhatsApp Ian</a>
+        <a href="mailto:ian@gorillasummitcoffee.com?subject=Enquiry%20from%20Gorilla%20Summit%20Coffee%20website&body=Hello%20Ian%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20specialty%20coffee.%20Please%20share%20details%20on%20available%20volumes%2C%20pricing%2C%20packaging%20and%20shipping.%0A%0AThank%20you." class="btn btn-outline">Email Ian</a>
+      </div>
+      <p class="email-note">Or write to us directly:</p>
+      <div class="contact-emails">
+        <a class="email-link" href="mailto:ian@gorillasummitcoffee.com">ian@gorillasummitcoffee.com</a>
+        <a class="email-link" href="mailto:info@gorillasummitcoffee.com">info@gorillasummitcoffee.com</a>
+      </div>
+      <div class="contact-details">
+        <div class="contact-person">
+          <strong>Ian Abigaba</strong>
+          <span class="role">Main contact · Farm & Sales</span>
+          <p>+256 772 314 778<br><a href="mailto:ian@gorillasummitcoffee.com">ian@gorillasummitcoffee.com</a></p>
+        </div>
+        <div class="contact-person">
+          <strong>Samuel Agaba Asiimwe</strong>
+          <span class="role">Communications & Web</span>
+          <p>+256 778 966 385<br><a href="mailto:info@gorillasummitcoffee.com">info@gorillasummitcoffee.com</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer style="background:#2A1B14;color:#E7D2A5;text-align:center;padding:40px 20px">
-    <img src="assets/images/logo.png" alt="Gorilla Summit Coffee" style="height:60px;margin-bottom:15px">
-    <p>© 2026 Gorilla Summit Coffee. Specialty coffee from the home of the mountain gorilla.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Gorilla Summit Coffee</strong>
+        <p>Specialty coffee from the home of the mountain gorilla.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Our Story</a>
+        <a href="#impact">Impact</a>
+        <a href="#locations">Locations</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Gorilla Summit Coffee. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('main-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    }
+  </script>
 </body>
 </html>
