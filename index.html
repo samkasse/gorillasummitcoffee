@@ -3,85 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gorilla Summit Coffee | Premium Ugandan Coffee</title>
-  <meta name="description" content="Gorilla Summit Coffee - Premium specialty coffee from the slopes of Uganda. Ethical, high-altitude arabica for coffee lovers worldwide.">
+  <title>Gorilla Summit Coffee | Specialty Coffee from Uganda</title>
+  <meta name="description" content="Gorilla Summit Coffee – specialty Arabica and Robusta from 3,800 smallholder farmers in the highlands of Kanungu, Kisoro and Bwindi, Uganda. Quality, community, and sustainability."">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Favicon placeholder – replace with your logo -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
-      <a href="/" class="logo">Gorilla Summit Coffee</a>
-      <nav class="nav">
+      <a href="/" class="logo">
+        <!-- Replace with <img src="assets/images/logo.png" alt="Gorilla Summit Coffee" class="logo-img"> when ready -->
+        Gorilla Summit Coffee
+      </a>
+      <nav class="nav" id="main-nav">
         <a href="#about">About</a>
+        <a href="#locations">Locations</a>
         <a href="#coffee">Our Coffee</a>
+        <a href="#impact">Impact</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <h1>From the Summit<br>to Your Cup</h1>
-      <p class="hero-subtitle">Premium high-altitude Arabica grown on the slopes of Uganda. Ethical, traceable, and exceptional.</p>
-      <a href="#coffee" class="btn">Discover Our Coffee</a>
+      <p class="hero-eyebrow">Specialty Coffee · Uganda</p>
+      <h1>From the Highlands<br>to the World</h1>
+      <p class="hero-subtitle">We work with 3,800 smallholder farmers across Kanungu, Kisoro and Bwindi to produce top-rated specialty Arabica and Robusta — and put more money back into the communities that grow it.</p>
+      <div class="hero-actions">
+        <a href="#coffee" class="btn">Explore Our Coffee</a>
+        <a href="#about" class="btn btn-outline">Our Story</a>
+      </div>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About / Story -->
   <section id="about" class="section">
     <div class="container">
       <div class="section-header">
         <h2>Our Story</h2>
-        <p>Rooted in the highlands of Uganda</p>
+        <p>Started in 2012 with a simple mission</p>
       </div>
       <div class="about-grid">
         <div class="about-text">
-          <p>Gorilla Summit Coffee is born from the rich volcanic soils and cool mountain air of Uganda’s highlands. We work directly with smallholder farmers who grow exceptional Arabica at elevations that produce complex, clean, and vibrant flavors.</p>
-          <p>Every lot is carefully selected, processed, and roasted with respect for the land, the farmers, and the people who drink it. We believe great coffee should be transparent, ethical, and memorable.</p>
+          <p>In 2012 I set off on a mission to bring specialty coffee from my village to the world. The area of Kanungu, on the western border of Uganda, and its surrounding districts have been producing coffee for generations.</p>
+          <p>Historically, all of the coffee had been sold to middlemen for $0.03 – $0.05 per pound. Because of its low quality it was labelled “non-exportable: local consumption only”. I set out to change that.</p>
+          <p>In partnership with groups like Temple Coffee Roasters (Sacramento, CA), we began training local farmers in proper growing and harvesting techniques. Over time this work produced drastic increases in cherry quality. We built a facility to process raw cherries into green coffee beans.</p>
+          <p>Improving quality (and therefore the price point) goes far beyond the coffee itself. Along the way we have addressed education, agricultural practices, social dynamics, quality of living and infrastructure for local farmers. This allows us to pay living wages and support community projects such as clean well water and higher education — including schools and an accredited university.</p>
+          <p class="about-closing">Gorilla Summit Coffee is a social enterprise working with smallholder farmers to bring more money into communities.</p>
         </div>
         <div class="about-highlights">
           <div class="highlight">
-            <strong>High Altitude</strong>
-            <span>Grown above 1,500m for exceptional quality</span>
+            <strong>3,800+</strong>
+            <span>Ugandan smallholder farmers we work with today</span>
           </div>
           <div class="highlight">
-            <strong>Direct Trade</strong>
-            <span>Fair prices and long-term farmer partnerships</span>
+            <strong>2012</strong>
+            <span>Year the mission began in Kanungu</span>
           </div>
           <div class="highlight">
             <strong>Specialty Grade</strong>
-            <span>Carefully selected and quality-focused</span>
+            <span>Cupping scores in the specialty range (85+)</span>
+          </div>
+          <div class="highlight">
+            <strong>Direct Impact</strong>
+            <span>Higher prices + community investment</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Coffee -->
-  <section id="coffee" class="section section-alt">
+  <!-- Locations -->
+  <section id="locations" class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <h2>Our Coffee</h2>
-        <p>Clean, complex, and characterful</p>
+        <h2>On Location</h2>
+        <p>From farm to table across the southwest highlands</p>
       </div>
-      <div class="coffee-grid">
-        <div class="coffee-card">
-          <h3>Summit Blend</h3>
-          <p>A balanced everyday coffee with notes of chocolate, red fruit, and a smooth finish. Perfect for filter or espresso.</p>
+      <div class="locations-grid">
+        <article class="location-card">
+          <h3>Kanungu</h3>
+          <p class="location-tag">Main production area</p>
+          <p>Our primary group of farmers. Coffee is farmed and harvested in these hills near the borders of Rwanda, Congo and Uganda — a stone’s throw from Queen Elizabeth National Park.</p>
+        </article>
+        <article class="location-card">
+          <h3>Kisoro</h3>
+          <p class="location-tag">Second largest group</p>
+          <p>Known for Lake Mutanda, fertile volcanic soil and the iconic Mount Sabinyo. Our second main farming location.</p>
+        </article>
+        <article class="location-card">
+          <h3>Bwindi</h3>
+          <p class="location-tag">Volcanic soils &amp; Batwa communities</p>
+          <p>Deep, dark volcanic soil and access to another important group of farmers. Home to the short Batwa people and the famous Bwindi Impenetrable Forest.</p>
+        </article>
+        <article class="location-card">
+          <h3>Kampala</h3>
+          <p class="location-tag">Headquarters</p>
+          <p>Location of our main offices. Strategic for transport to the Kenyan coast and Entebbe International Airport, plus strong communication infrastructure.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Coffee / Services -->
+  <section id="coffee" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Coffee &amp; Services</h2>
+        <p>Quality from cherry to cup</p>
+      </div>
+      <div class="coffee-intro">
+        <p>Quality is the cornerstone of Gorilla Summit Coffee. Quality extends beyond the coffee into the environment where it grows and the people it touches. By producing only the highest quality 100% Arabica as well as Robusta, we are able to pay a higher price to the coffee farmers and invest profits in community development projects.</p>
+        <p>We supply specialty coffee to premier roasters and distributors around the world, with most of the coffee going to the United States, Europe and the Middle East.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Harvesting &amp; Processing</h3>
+          <p>Training in proper growing and harvesting techniques. Facility for turning raw cherries into green coffee beans. Natural and honey processes refined for both flavour and lower emissions.</p>
         </div>
-        <div class="coffee-card">
-          <h3>Single Origin Lots</h3>
-          <p>Seasonal micro-lots from specific farms and cooperatives, showcasing the unique terroir of Ugandan highlands.</p>
+        <div class="service-card">
+          <h3>Roasting</h3>
+          <p>Careful roasting that respects the unique character of each highland lot — clean, complex profiles with the potential for high cupping scores.</p>
         </div>
-        <div class="coffee-card">
-          <h3>Limited Releases</h3>
-          <p>Experimental processes and rare cultivars for those who love to explore the edges of flavor.</p>
+        <div class="service-card">
+          <h3>Packaging</h3>
+          <p>Professional packaging ready for export and specialty markets, protecting quality from origin to the roaster or café.</p>
+        </div>
+        <div class="service-card">
+          <h3>Farmer Support</h3>
+          <p>Seedlings, training, and ongoing technical support so farmers can produce the best quality specialty coffee in Uganda and the Great Lakes region.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact & Sustainability -->
+  <section id="impact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Impact &amp; Sustainability</h2>
+        <p>Coffee that lifts communities and protects the land</p>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <h3>Carbon Neutral Goals</h3>
+          <p>We are working to neutralise our carbon footprint. Over recent years we have changed production systems to conserve water and move toward zero carbon emissions across our locations. Naturals and honeys have been perfected not only for flavour but also for net-zero aspirations.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Organic Transition</h3>
+          <p>Thousands of farmers are in transition toward organic practices. We experiment with live organisms to “clean the soil” in areas where harmful chemicals were used in the past.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Community Investment</h3>
+          <p>Premium prices paid to farmers translate into better livelihoods. Indirect support includes clean water projects, education, schools and even an accredited university for the wider community.</p>
         </div>
       </div>
     </div>
@@ -92,21 +178,55 @@
     <div class="container contact-inner">
       <div class="section-header">
         <h2>Get in Touch</h2>
-        <p>We’d love to hear from you</p>
+        <p>Let’s start a conversation</p>
       </div>
       <div class="contact-content">
-        <p>Whether you’re a café, distributor, or coffee lover looking for specialty Ugandan coffee, reach out and let’s start a conversation.</p>
-        <a href="mailto:hello@gorillasummitcoffee.com" class="btn">hello@gorillasummitcoffee.com</a>
+        <p>Whether you are a café, roaster, distributor or simply a coffee lover looking for specialty Ugandan coffee, we would love to hear from you.</p>
+        <div class="contact-details">
+          <p><strong>Email</strong><br>
+            <a href="mailto:sajjaphillip@yahoo.com">sajjaphillip@yahoo.com</a><br>
+            <a href="mailto:hello@gorillasummitcoffee.com">hello@gorillasummitcoffee.com</a>
+          </p>
+          <p><strong>Phone</strong><br>
+            +256 392 176 711
+          </p>
+          <p><strong>Address</strong><br>
+            P.O. Box 28308, Kampala, Uganda
+          </p>
+        </div>
+        <a href="mailto:sajjaphillip@yahoo.com" class="btn">Send an Inquiry</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Gorilla Summit Coffee. All rights reserved.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Gorilla Summit Coffee</strong>
+        <p>Specialty coffee from Uganda’s smallholder farmers.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#locations">Locations</a>
+        <a href="#coffee">Coffee</a>
+        <a href="#impact">Impact</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Gorilla Summit Coffee. All rights reserved. Social enterprise · Uganda.</p>
     </div>
   </footer>
 
+  <script>
+    // Simple mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('main-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        toggle.classList.toggle('active');
+      });
+    }
+  </script>
 </body>
 </html>
