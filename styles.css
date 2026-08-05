@@ -1,6 +1,6 @@
 /* ============================================
    Gorilla Summit Coffee – 2026 Redesign
-   Official brand colours from logo guidelines
+   Bold, colourful, professional
    ============================================ */
 
 *, *::before, *::after {
@@ -10,9 +10,9 @@
 }
 
 :root {
-  /* Official Brand Palette */
   --color-forest-green: #3E6B35;
   --color-leaf-green: #79B84A;
+  --color-spring: #8BC34A;
   --color-coffee-brown: #5A3825;
   --color-espresso: #2A1B14;
   --color-dark: #111111;
@@ -21,7 +21,6 @@
   --color-ivory: #F6F2EA;
   --color-gold: #C9A227;
 
-  /* Mapped for site use */
   --color-bg: var(--color-ivory);
   --color-bg-alt: #F0E9DC;
   --color-bg-dark: var(--color-espresso);
@@ -37,7 +36,7 @@
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 
-  --radius: 10px;
+  --radius: 12px;
   --shadow: 0 12px 30px rgba(42, 27, 20, 0.08);
   --transition: 0.2s ease;
 }
@@ -77,7 +76,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(246, 242, 234, 0.95);
+  background: rgba(246, 242, 234, 0.96);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--color-border);
 }
@@ -112,7 +111,7 @@ a {
   gap: 1.25rem;
 }
 
-/* Language Switcher – Bold & Noticeable */
+/* Language Switcher */
 .lang-switcher {
   position: relative;
 }
@@ -137,13 +136,6 @@ a {
 .lang-btn:hover {
   background: var(--color-coffee-brown);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(42, 27, 20, 0.22);
-}
-
-.lang-btn svg {
-  opacity: 0.9;
-  width: 13px;
-  height: 13px;
 }
 
 .lang-dropdown {
@@ -175,14 +167,9 @@ a {
   font-size: 0.95rem;
   color: var(--color-text);
   cursor: pointer;
-  transition: background var(--transition), color var(--transition);
 }
 
-.lang-option:hover {
-  background: var(--color-bg-alt);
-  color: var(--color-green);
-}
-
+.lang-option:hover,
 .lang-option.active {
   background: rgba(62, 107, 53, 0.09);
   color: var(--color-forest-green);
@@ -191,18 +178,19 @@ a {
 
 .nav {
   display: flex;
-  gap: 1.6rem;
+  gap: 1.5rem;
 }
 
 .nav a {
-  font-size: 0.93rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: var(--color-text-muted);
   transition: color var(--transition);
+  position: relative;
 }
 
 .nav a:hover {
-  color: var(--color-green);
+  color: var(--color-leaf-green);
 }
 
 .nav-toggle {
@@ -220,7 +208,42 @@ a {
   width: 22px;
   height: 2px;
   background: var(--color-accent);
-  transition: var(--transition);
+}
+
+/* ---------- Buttons – Bold & Pop ---------- */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.1rem;
+  background: var(--color-espresso);
+  color: var(--color-white);
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 3px solid var(--color-leaf-green);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(121, 184, 74, 0.25);
+  letter-spacing: 0.02em;
+}
+
+.btn:hover {
+  background: var(--color-leaf-green);
+  color: var(--color-dark);
+  border-color: var(--color-spring);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(121, 184, 74, 0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-espresso);
+  border: 3px solid var(--color-leaf-green);
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background: var(--color-leaf-green);
+  color: var(--color-dark);
+  border-color: var(--color-spring);
 }
 
 /* ---------- Hero ---------- */
@@ -245,17 +268,17 @@ a {
 }
 
 .hero-eyebrow {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-green);
+  color: var(--color-leaf-green);
   margin-bottom: 1rem;
 }
 
 .hero h1 {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 6.5vw, 4.1rem);
+  font-size: clamp(2.6rem, 6.5vw, 4.2rem);
   font-weight: 600;
   line-height: 1.12;
   color: var(--color-accent);
@@ -264,46 +287,17 @@ a {
 }
 
 .hero-subtitle {
-  font-size: 1.15rem;
+  font-size: 1.18rem;
   color: var(--color-text-muted);
-  max-width: 580px;
+  max-width: 600px;
   margin: 0 auto 2.5rem;
 }
 
 .hero-actions {
   display: flex;
-  gap: 1rem;
+  gap: 1.1rem;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-/* ---------- Buttons ---------- */
-.btn {
-  display: inline-block;
-  padding: 0.9rem 1.85rem;
-  background: var(--color-accent);
-  color: var(--color-white);
-  font-size: 0.95rem;
-  font-weight: 500;
-  border-radius: 6px;
-  transition: background var(--transition), transform 0.15s;
-  border: 2px solid transparent;
-}
-
-.btn:hover {
-  background: var(--color-accent-light);
-  transform: translateY(-1px);
-}
-
-.btn-outline {
-  background: transparent;
-  color: var(--color-accent);
-  border-color: var(--color-accent);
-}
-
-.btn-outline:hover {
-  background: var(--color-accent);
-  color: var(--color-white);
 }
 
 /* ---------- Sections ---------- */
@@ -317,21 +311,20 @@ a {
 
 .section-header {
   text-align: center;
-  margin-bottom: 3.25rem;
+  margin-bottom: 3rem;
 }
 
 .section-header h2 {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 2.6rem);
   font-weight: 600;
   color: var(--color-accent);
   margin-bottom: 0.45rem;
-  letter-spacing: -0.02em;
 }
 
 .section-header p {
   color: var(--color-text-muted);
-  font-size: 1.05rem;
+  font-size: 1.08rem;
 }
 
 /* ---------- About ---------- */
@@ -349,7 +342,7 @@ a {
 }
 
 .about-closing {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-accent) !important;
   margin-top: 1.5rem;
 }
@@ -361,17 +354,18 @@ a {
 }
 
 .highlight {
-  padding: 1.35rem 1.5rem;
+  padding: 1.4rem 1.5rem;
   background: var(--color-white);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-border);
   border-radius: var(--radius);
+  border-left: 5px solid var(--color-leaf-green);
 }
 
 .highlight strong {
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-family: var(--font-serif);
-  color: var(--color-green);
+  color: var(--color-leaf-green);
   margin-bottom: 0.25rem;
 }
 
@@ -384,41 +378,55 @@ a {
 .locations-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 1.6rem;
 }
 
 .location-card {
   background: var(--color-white);
-  padding: 1.85rem;
+  padding: 0;
   border-radius: var(--radius);
-  border: 1px solid var(--color-border);
-  transition: transform var(--transition), box-shadow var(--transition);
+  border: 2px solid var(--color-border);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
 .location-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow);
+  border-color: var(--color-leaf-green);
+}
+
+.card-image-placeholder {
+  height: 160px;
+  background: linear-gradient(135deg, #E8DFD0, #D8C19B);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .location-card h3 {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   color: var(--color-accent);
-  margin-bottom: 0.3rem;
+  margin: 1.2rem 1.4rem 0.3rem;
 }
 
 .location-tag {
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--color-green);
-  margin-bottom: 0.75rem;
+  color: var(--color-leaf-green);
+  margin: 0 1.4rem 0.7rem;
 }
 
 .location-card p:last-child {
   color: var(--color-text-muted);
   font-size: 0.98rem;
+  padding: 0 1.4rem 1.4rem;
 }
 
 /* ---------- Coffee / Services ---------- */
@@ -442,20 +450,20 @@ a {
 
 .service-card {
   background: var(--color-white);
-  padding: 1.85rem;
+  padding: 1.9rem;
   border-radius: var(--radius);
-  border: 1px solid var(--color-border);
-  transition: transform var(--transition), box-shadow var(--transition);
+  border: 2px solid var(--color-border);
+  transition: transform var(--transition), border-color var(--transition);
 }
 
 .service-card:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shadow);
+  border-color: var(--color-leaf-green);
 }
 
 .service-card h3 {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: var(--color-accent);
   margin-bottom: 0.65rem;
 }
@@ -466,23 +474,31 @@ a {
 }
 
 /* ---------- Impact ---------- */
+.impact-intro {
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
 .impact-card {
   background: var(--color-white);
-  padding: 1.85rem;
+  padding: 1.9rem;
   border-radius: var(--radius);
-  border: 1px solid var(--color-border);
-  border-top: 3px solid var(--color-green);
+  border: 2px solid var(--color-border);
+  border-top: 5px solid var(--color-leaf-green);
 }
 
 .impact-card h3 {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: var(--color-accent);
   margin-bottom: 0.7rem;
 }
@@ -490,6 +506,54 @@ a {
 .impact-card p {
   color: var(--color-text-muted);
   font-size: 0.98rem;
+}
+
+.impact-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* ---------- Partners ---------- */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.partner-card {
+  background: var(--color-white);
+  padding: 1.9rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--color-border);
+  text-align: center;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.partner-card:hover {
+  border-color: var(--color-leaf-green);
+  transform: translateY(-3px);
+}
+
+.partner-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-accent);
+  margin-bottom: 0.6rem;
+}
+
+.partner-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.partners-cta {
+  text-align: center;
+}
+
+.partners-cta p {
+  margin-bottom: 1.2rem;
+  color: var(--color-text-muted);
 }
 
 /* ---------- Contact ---------- */
@@ -507,7 +571,7 @@ a {
 
 .contact-actions {
   display: flex;
-  gap: 1rem;
+  gap: 1.1rem;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
@@ -524,20 +588,20 @@ a {
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .email-link {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 600;
-  color: var(--color-green);
-  padding: 0.35rem 0.8rem;
-  border-radius: 6px;
+  color: var(--color-leaf-green);
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
   transition: background var(--transition);
 }
 
 .email-link:hover {
-  background: rgba(62, 107, 53, 0.08);
+  background: rgba(121, 184, 74, 0.12);
   text-decoration: underline;
 }
 
@@ -545,15 +609,14 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  margin-bottom: 2.25rem;
   text-align: left;
 }
 
 .contact-person {
-  background: var(--color-bg-alt);
+  background: var(--color-white);
   padding: 1.6rem;
   border-radius: var(--radius);
-  border: 1px solid var(--color-border);
+  border: 2px solid var(--color-border);
 }
 
 .contact-person strong {
@@ -567,10 +630,10 @@ a {
 .contact-person .role {
   display: block;
   font-size: 0.82rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-green);
+  color: var(--color-leaf-green);
   margin-bottom: 0.9rem;
 }
 
@@ -581,7 +644,7 @@ a {
 }
 
 .contact-person a {
-  color: var(--color-green);
+  color: var(--color-leaf-green);
   font-weight: 500;
 }
 
@@ -592,7 +655,6 @@ a {
 /* ---------- Footer ---------- */
 .footer {
   padding: 3rem 0 2rem;
-  border-top: 1px solid var(--color-border);
   background: var(--color-bg-dark);
   color: #C9C0B6;
 }
@@ -627,7 +689,7 @@ a {
 }
 
 .footer-links a:hover {
-  color: var(--color-cream);
+  color: var(--color-leaf-green);
 }
 
 .footer-copy {
@@ -641,7 +703,8 @@ a {
   .about-grid,
   .locations-grid,
   .services-grid,
-  .impact-grid {
+  .impact-grid,
+  .partners-grid {
     grid-template-columns: 1fr;
   }
 
@@ -689,11 +752,6 @@ a {
   .header-right {
     gap: 0.6rem;
   }
-
-  .lang-btn {
-    padding: 0.5rem 0.9rem;
-    font-size: 0.85rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -707,10 +765,5 @@ a {
 
   .logo span {
     display: none;
-  }
-
-  .lang-dropdown {
-    right: -10px;
-    min-width: 150px;
   }
 }
