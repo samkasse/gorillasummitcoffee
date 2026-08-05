@@ -1,6 +1,6 @@
 /* ============================================
    Gorilla Summit Coffee – 2026 Redesign
-   Clean, vibrant highland coffee aesthetic
+   Official brand colours from logo guidelines
    ============================================ */
 
 *, *::before, *::after {
@@ -10,25 +10,35 @@
 }
 
 :root {
-  /* Core palette – earthy coffee + highland green */
-  --color-bg: #faf8f5;
-  --color-bg-alt: #f0ebe3;
-  --color-bg-dark: #1f140f;
-  --color-text: #1a1a1a;
-  --color-text-muted: #5c5c5c;
-  --color-accent: #2c1810;          /* deep coffee brown */
-  --color-accent-light: #4a2f23;
-  --color-green: #2d4a3e;           /* highland / leaf green */
-  --color-green-light: #3d6354;
-  --color-cream: #f7f3ec;
-  --color-border: #e5dfd6;
+  /* Official Brand Palette */
+  --color-forest-green: #3E6B35;
+  --color-leaf-green: #79B84A;
+  --color-coffee-brown: #5A3825;
+  --color-espresso: #2A1B14;
+  --color-dark: #111111;
+  --color-cream: #E7D2A5;
+  --color-beige: #D8C19B;
+  --color-ivory: #F6F2EA;
+  --color-gold: #C9A227;
+
+  /* Mapped for site use */
+  --color-bg: var(--color-ivory);
+  --color-bg-alt: #F0E9DC;
+  --color-bg-dark: var(--color-espresso);
+  --color-text: var(--color-dark);
+  --color-text-muted: #5A4A3A;
+  --color-accent: var(--color-espresso);
+  --color-accent-light: var(--color-coffee-brown);
+  --color-green: var(--color-forest-green);
+  --color-green-light: var(--color-leaf-green);
+  --color-border: #E0D5C5;
   --color-white: #ffffff;
 
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 
   --radius: 10px;
-  --shadow: 0 12px 30px rgba(44, 24, 16, 0.08);
+  --shadow: 0 12px 30px rgba(42, 27, 20, 0.08);
   --transition: 0.2s ease;
 }
 
@@ -67,7 +77,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250, 248, 245, 0.94);
+  background: rgba(246, 242, 234, 0.95);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--color-border);
 }
@@ -76,20 +86,24 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 76px;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-accent);
   letter-spacing: -0.02em;
 }
 
 .logo-img {
-  height: 42px;
+  height: 52px;
   width: auto;
+  border-radius: 50%;
 }
 
 .nav {
@@ -105,7 +119,7 @@ a {
 }
 
 .nav a:hover {
-  color: var(--color-accent);
+  color: var(--color-green);
 }
 
 .nav-toggle {
@@ -129,8 +143,8 @@ a {
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  padding: 8rem 0 7rem;
-  background: linear-gradient(160deg, #e8e0d4 0%, #f0ebe3 45%, var(--color-bg) 100%);
+  padding: 7.5rem 0 6.5rem;
+  background: linear-gradient(165deg, #E8DFD0 0%, var(--color-bg-alt) 40%, var(--color-bg) 100%);
   text-align: center;
   overflow: hidden;
 }
@@ -138,7 +152,7 @@ a {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 20%, rgba(45, 74, 62, 0.06) 0%, transparent 55%);
+  background: radial-gradient(ellipse at 70% 15%, rgba(62, 107, 53, 0.07) 0%, transparent 55%);
   pointer-events: none;
 }
 
@@ -444,7 +458,7 @@ a {
   padding: 3rem 0 2rem;
   border-top: 1px solid var(--color-border);
   background: var(--color-bg-dark);
-  color: #c9c0b6;
+  color: #C9C0B6;
 }
 
 .footer-inner {
@@ -455,7 +469,7 @@ a {
 .footer-brand strong {
   font-family: var(--font-serif);
   font-size: 1.15rem;
-  color: #f0ebe3;
+  color: var(--color-cream);
   display: block;
   margin-bottom: 0.35rem;
 }
@@ -472,12 +486,12 @@ a {
 
 .footer-links a {
   font-size: 0.9rem;
-  color: #c9c0b6;
+  color: #C9C0B6;
   transition: color var(--transition);
 }
 
 .footer-links a:hover {
-  color: #f0ebe3;
+  color: var(--color-cream);
 }
 
 .footer-copy {
@@ -494,17 +508,13 @@ a {
   .impact-grid {
     grid-template-columns: 1fr;
   }
-
-  .impact-grid {
-    gap: 1.25rem;
-  }
 }
 
 @media (max-width: 700px) {
   .nav {
     display: none;
     position: absolute;
-    top: 72px;
+    top: 76px;
     left: 0;
     right: 0;
     background: var(--color-bg);
@@ -538,10 +548,10 @@ a {
 
 @media (max-width: 480px) {
   .header-inner {
-    height: 64px;
+    height: 68px;
   }
 
-  .logo {
-    font-size: 1.15rem;
+  .logo-img {
+    height: 44px;
   }
 }
