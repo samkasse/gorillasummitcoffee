@@ -1,0 +1,264 @@
+/* Gorilla Summit Coffee - Simple client-side i18n */
+
+const translations = {
+  en: {
+    "nav-about": "About",
+    "nav-locations": "Locations",
+    "nav-coffee": "Our Coffee",
+    "nav-impact": "Impact",
+    "nav-contact": "Contact",
+    "hero-eyebrow": "Specialty Coffee · Uganda",
+    "hero-title": "From the Highlands<br>to the World",
+    "hero-subtitle": "We work with 3,800 smallholder farmers across Kanungu, Kisoro and Bwindi to produce top-rated specialty Arabica and Robusta — and put more money back into the communities that grow it.",
+    "btn-explore": "Explore Our Coffee",
+    "btn-enquire": "Enquire Now",
+    "about-title": "Our Story",
+    "about-subtitle": "Started in 2012 with a simple mission",
+    "about-p1": "In 2012 I set off on a mission to bring specialty coffee from my village to the world. The area of Kanungu, on the western border of Uganda, and its surrounding districts have been producing coffee for generations.",
+    "about-p2": "Historically, all of the coffee had been sold to middlemen for $0.03 – $0.05 per pound. Because of its low quality it was labelled “non-exportable: local consumption only”. I set out to change that.",
+    "about-p3": "In partnership with groups like Temple Coffee Roasters (Sacramento, CA), we began training local farmers in proper growing and harvesting techniques. Over time this work produced drastic increases in cherry quality. We built a facility to process raw cherries into green coffee beans.",
+    "about-p4": "Improving quality (and therefore the price point) goes far beyond the coffee itself. Along the way we have addressed education, agricultural practices, social dynamics, quality of living and infrastructure for local farmers. This allows us to pay living wages and support community projects such as clean well water and higher education — including schools and an accredited university.",
+    "about-closing": "Gorilla Summit Coffee is a social enterprise working with smallholder farmers to bring more money into communities.",
+    "highlight-farmers": "Ugandan smallholder farmers we work with today",
+    "highlight-year": "Year the mission began in Kanungu",
+    "highlight-grade-label": "Specialty Grade",
+    "highlight-grade": "Cupping scores in the specialty range (85+)",
+    "highlight-impact-label": "Direct Impact",
+    "highlight-impact": "Higher prices + community investment",
+    "locations-title": "On Location",
+    "locations-subtitle": "From farm to table across the southwest highlands",
+    "loc-kanungu-tag": "Main production area",
+    "loc-kanungu": "Our primary group of farmers. Coffee is farmed and harvested in these hills near the borders of Rwanda, Congo and Uganda — a stone’s throw from Queen Elizabeth National Park.",
+    "loc-kisoro-tag": "Second largest group",
+    "loc-kisoro": "Known for Lake Mutanda, fertile volcanic soil and the iconic Mount Sabinyo. Our second main farming location.",
+    "loc-bwindi-tag": "Volcanic soils & Batwa communities",
+    "loc-bwindi": "Deep, dark volcanic soil and access to another important group of farmers. Home to the short Batwa people and the famous Bwindi Impenetrable Forest.",
+    "loc-kampala-tag": "Headquarters",
+    "loc-kampala": "Location of our main offices. Strategic for transport to the Kenyan coast and Entebbe International Airport, plus strong communication infrastructure.",
+    "coffee-title": "Our Coffee & Services",
+    "coffee-subtitle": "Quality from cherry to cup",
+    "coffee-p1": "Quality is the cornerstone of Gorilla Summit Coffee. Quality extends beyond the coffee into the environment where it grows and the people it touches. By producing only the highest quality 100% Arabica as well as Robusta, we are able to pay a higher price to the coffee farmers and invest profits in community development projects.",
+    "coffee-p2": "We supply specialty coffee to premier roasters and distributors around the world, with most of the coffee going to the United States, Europe and the Middle East.",
+    "service-harvest-title": "Harvesting & Processing",
+    "service-harvest": "Training in proper growing and harvesting techniques. Facility for turning raw cherries into green coffee beans. Natural and honey processes refined for both flavour and lower emissions.",
+    "service-roast-title": "Roasting",
+    "service-roast": "Careful roasting that respects the unique character of each highland lot — clean, complex profiles with the potential for high cupping scores.",
+    "service-pack-title": "Packaging",
+    "service-pack": "Professional packaging ready for export and specialty markets, protecting quality from origin to the roaster or café.",
+    "service-support-title": "Farmer Support",
+    "service-support": "Seedlings, training, and ongoing technical support so farmers can produce the best quality specialty coffee in Uganda and the Great Lakes region.",
+    "impact-title": "Impact & Sustainability",
+    "impact-subtitle": "Coffee that lifts communities and protects the land",
+    "impact-carbon-title": "Carbon Neutral Goals",
+    "impact-carbon": "We are working to neutralise our carbon footprint. Over recent years we have changed production systems to conserve water and move toward zero carbon emissions across our locations. Naturals and honeys have been perfected not only for flavour but also for net-zero aspirations.",
+    "impact-organic-title": "Organic Transition",
+    "impact-organic": "Thousands of farmers are in transition toward organic practices. We experiment with live organisms to “clean the soil” in areas where harmful chemicals were used in the past.",
+    "impact-community-title": "Community Investment",
+    "impact-community": "Premium prices paid to farmers translate into better livelihoods. Indirect support includes clean water projects, education, schools and even an accredited university for the wider community.",
+    "contact-title": "Get in Touch",
+    "contact-subtitle": "Enquire about specialty coffee, volumes, pricing & shipping",
+    "contact-intro": "Whether you are a café, roaster, distributor or importer looking for specialty Ugandan coffee, we would love to hear from you. Contact us for details on available lots, volumes, pricing, packaging options, shipping and sales packages.",
+    "btn-whatsapp": "WhatsApp Us",
+    "btn-email": "Email Us",
+    "role-main": "Main contact · Direct with farmers",
+    "role-comm": "Communication & Web Presence",
+    "footer-tagline": "Specialty coffee from Uganda’s smallholder farmers."
+  },
+
+  zh: {
+    "nav-about": "关于我们",
+    "nav-locations": "产地",
+    "nav-coffee": "我们的咖啡",
+    "nav-impact": "影响力",
+    "nav-contact": "联系我们",
+    "hero-eyebrow": "精品咖啡 · 乌干达",
+    "hero-title": "从高原<br>走向世界",
+    "hero-subtitle": "我们与卡农古、基索罗和布温迪地区的3,800名小农户合作，生产顶级精品阿拉比卡和罗布斯塔咖啡，并将更多收益回馈给种植社区。",
+    "btn-explore": "探索我们的咖啡",
+    "btn-enquire": "立即咨询",
+    "about-title": "我们的故事",
+    "about-subtitle": "始于2012年的简单使命",
+    "about-p1": "2012年，我开始了一项使命，将来自家乡的精品咖啡带到世界。乌干达西部边境的卡农古及其周边地区世代种植咖啡。",
+    "about-p2": "历史上，所有咖啡都以每磅0.03–0.05美元的价格卖给中间商。由于品质低劣，它被标记为“不可出口：仅供本地消费”。我决心改变这一点。",
+    "about-p3": "通过与Temple Coffee Roasters（加州萨克拉门托）等合作伙伴，我们开始培训当地农民正确的种植和收获技术。随着时间推移，樱桃品质大幅提升。我们建造了将生樱桃加工成生豆的设施。",
+    "about-p4": "提升品质（以及价格）远不止咖啡本身。我们还关注教育、农业实践、社会动态、生活质量和基础设施。这使我们能够支付合理工资，并支持清洁水源和高等教育等社区项目。",
+    "about-closing": "Gorilla Summit Coffee是一家社会企业，与小农户合作，为社区带来更多收益。",
+    "highlight-farmers": "我们今天合作的乌干达小农户",
+    "highlight-year": "使命在卡农古开始的年份",
+    "highlight-grade-label": "精品级",
+    "highlight-grade": "杯测分数达到精品范围（85+）",
+    "highlight-impact-label": "直接影响力",
+    "highlight-impact": "更高价格 + 社区投资",
+    "locations-title": "产地",
+    "locations-subtitle": "从农场到餐桌，横跨西南高地",
+    "loc-kanungu-tag": "主要产区",
+    "loc-kanungu": "我们的主要农户群体。咖啡种植在卢旺达、刚果和乌干达边境的山区，距离伊丽莎白女王国家公园仅一步之遥。",
+    "loc-kisoro-tag": "第二大群体",
+    "loc-kisoro": "以穆坦达湖、肥沃火山土壤和标志性的萨比尼奥山而闻名。我们的第二大种植区。",
+    "loc-bwindi-tag": "火山土壤与巴特瓦社区",
+    "loc-bwindi": "深厚的黑色火山土壤，连接另一重要农户群体。巴特瓦人的家园，也是著名的布温迪原始森林所在地。",
+    "loc-kampala-tag": "总部",
+    "loc-kampala": "我们主要办公室所在地。便于运输至肯尼亚海岸和恩德培国际机场，通信基础设施完善。",
+    "coffee-title": "我们的咖啡与服务",
+    "coffee-subtitle": "从樱桃到杯中的品质",
+    "coffee-p1": "品质是Gorilla Summit Coffee的基石。品质不仅体现在咖啡本身，还延伸到生长环境和相关的人。通过只生产最高品质的100%阿拉比卡和罗布斯塔，我们能够向农民支付更高价格，并将利润投入社区发展项目。",
+    "coffee-p2": "我们向全球顶级烘焙商和分销商供应精品咖啡，大部分销往美国、欧洲和中东。",
+    "service-harvest-title": "收获与加工",
+    "service-harvest": "培训正确的种植和收获技术。将生樱桃加工成生豆的设施。自然处理和蜜处理工艺，兼顾风味与低碳排放。",
+    "service-roast-title": "烘焙",
+    "service-roast": "精心烘焙，尊重每个高原批次的独特个性——干净、复杂的风味轮廓，具备高杯测分数潜力。",
+    "service-pack-title": "包装",
+    "service-pack": "专业包装，适合出口和精品市场，从产地到烘焙商或咖啡馆全程保护品质。",
+    "service-support-title": "农民支持",
+    "service-support": "提供幼苗、培训和持续技术支持，帮助农民生产乌干达及大湖地区最好的精品咖啡。",
+    "impact-title": "影响力与可持续性",
+    "impact-subtitle": "提升社区并保护土地的咖啡",
+    "impact-carbon-title": "碳中和目标",
+    "impact-carbon": "我们正在努力实现碳足迹中和。近年来我们改进了生产系统以节约用水，并在所有产区迈向零碳排放。自然处理和蜜处理不仅为了风味，也为了净零目标。",
+    "impact-organic-title": "有机转型",
+    "impact-organic": "数千名农民正在向有机实践过渡。我们在曾使用有害化学品的地区试验活体生物“清洁土壤”。",
+    "impact-community-title": "社区投资",
+    "impact-community": "支付给农民的溢价转化为更好的生计。间接支持包括清洁水项目、教育、学校甚至一所认证大学。",
+    "contact-title": "联系我们",
+    "contact-subtitle": "咨询精品咖啡、数量、价格与运输",
+    "contact-intro": "无论您是咖啡馆、烘焙商、分销商还是进口商，如果您在寻找乌干达精品咖啡，我们很乐意与您交流。请联系我们获取现货批次、数量、价格、包装选项、运输和销售方案的详细信息。",
+    "btn-whatsapp": "WhatsApp 联系",
+    "btn-email": "发送邮件",
+    "role-main": "主要联系人 · 直接对接农民",
+    "role-comm": "沟通与网络事务",
+    "footer-tagline": "来自乌干达小农户的精品咖啡。"
+  },
+
+  ar: {
+    "nav-about": "من نحن",
+    "nav-locations": "المواقع",
+    "nav-coffee": "قهوتنا",
+    "nav-impact": "التأثير",
+    "nav-contact": "اتصل بنا",
+    "hero-eyebrow": "قهوة مختصة · أوغندا",
+    "hero-title": "من المرتفعات<br>إلى العالم",
+    "hero-subtitle": "نعمل مع 3800 مزارع صغير في كانونغو وكسورو وبوندي لإنتاج قهوة عربية وروبوستا مختصة عالية الجودة، ونعيد المزيد من العائدات إلى المجتمعات التي تزرعها.",
+    "btn-explore": "استكشف قهوتنا",
+    "btn-enquire": "استفسر الآن",
+    "about-title": "قصتنا",
+    "about-subtitle": "بدأت عام 2012 بمهمة بسيطة",
+    "contact-title": "تواصل معنا",
+    "contact-subtitle": "استفسر عن القهوة المختصة والكميات والأسعار والشحن",
+    "contact-intro": "سواء كنت مقهى أو محمصة أو موزعاً أو مستورداً تبحث عن قهوة أوغندية مختصة، يسعدنا التواصل معك. اتصل بنا للحصول على تفاصيل حول الدفعات المتوفرة والكميات والأسعار وخيارات التعبئة والشحن وباقات المبيعات.",
+    "btn-whatsapp": "واتساب",
+    "btn-email": "راسلنا",
+    "role-main": "جهة الاتصال الرئيسية · مباشرة مع المزارعين",
+    "role-comm": "التواصل والحضور الرقمي",
+    "footer-tagline": "قهوة مختصة من صغار المزارعين في أوغندا."
+  },
+
+  fr: {
+    "nav-about": "À propos",
+    "nav-locations": "Régions",
+    "nav-coffee": "Notre Café",
+    "nav-impact": "Impact",
+    "nav-contact": "Contact",
+    "hero-eyebrow": "Café de Spécialité · Ouganda",
+    "hero-title": "Des Hauts Plateaux<br>au Monde Entier",
+    "hero-subtitle": "Nous travaillons avec 3 800 petits producteurs à Kanungu, Kisoro et Bwindi pour produire un café Arabica et Robusta de spécialité de premier ordre — et redistribuer davantage de revenus aux communautés qui le cultivent.",
+    "btn-explore": "Découvrir notre café",
+    "btn-enquire": "Nous contacter",
+    "about-title": "Notre Histoire",
+    "about-subtitle": "Commencée en 2012 avec une mission simple",
+    "contact-title": "Contactez-nous",
+    "contact-subtitle": "Renseignez-vous sur le café de spécialité, volumes, prix et expédition",
+    "contact-intro": "Que vous soyez un café, un torréfacteur, un distributeur ou un importateur à la recherche de café ougandais de spécialité, nous serions ravis d’échanger avec vous. Contactez-nous pour des détails sur les lots disponibles, volumes, tarifs, options d’emballage, expédition et formules commerciales.",
+    "btn-whatsapp": "WhatsApp",
+    "btn-email": "Envoyer un e-mail",
+    "role-main": "Contact principal · Direct avec les producteurs",
+    "role-comm": "Communication & Présence web",
+    "footer-tagline": "Café de spécialité des petits producteurs ougandais."
+  },
+
+  it: {
+    "nav-about": "Chi Siamo",
+    "nav-locations": "Zone di Produzione",
+    "nav-coffee": "Il Nostro Caffè",
+    "nav-impact": "Impatto",
+    "nav-contact": "Contatti",
+    "hero-eyebrow": "Caffè Specialty · Uganda",
+    "hero-title": "Dagli Altopiani<br>al Mondo",
+    "hero-subtitle": "Lavoriamo con 3.800 piccoli produttori a Kanungu, Kisoro e Bwindi per produrre Arabica e Robusta specialty di altissima qualità — e restituire più valore alle comunità che lo coltivano.",
+    "btn-explore": "Esplora il nostro caffè",
+    "btn-enquire": "Richiedi informazioni",
+    "about-title": "La Nostra Storia",
+    "about-subtitle": "Iniziata nel 2012 con una missione semplice",
+    "contact-title": "Contattaci",
+    "contact-subtitle": "Richiedi informazioni su caffè specialty, volumi, prezzi e spedizioni",
+    "contact-intro": "Sia che tu sia un bar, un torrefattore, un distributore o un importatore alla ricerca di caffè ugandese specialty, saremo lieti di sentirti. Contattaci per dettagli su lotti disponibili, volumi, prezzi, opzioni di confezionamento, spedizioni e pacchetti commerciali.",
+    "btn-whatsapp": "WhatsApp",
+    "btn-email": "Invia Email",
+    "role-main": "Contatto principale · Diretto con i produttori",
+    "role-comm": "Comunicazione & Presenza web",
+    "footer-tagline": "Caffè specialty dai piccoli produttori dell’Uganda."
+  },
+
+  ja: {
+    "nav-about": "私たちについて",
+    "nav-locations": "産地",
+    "nav-coffee": "私たちのコーヒー",
+    "nav-impact": "インパクト",
+    "nav-contact": "お問い合わせ",
+    "hero-eyebrow": "スペシャルティコーヒー · ウガンダ",
+    "hero-title": "高原から<br>世界へ",
+    "hero-subtitle": "カヌング、キソロ、ブウィンディの3,800人の小規模農家と協力し、最高品質のスペシャルティアラビカとロブスタを生産。その利益をより多く生産者コミュニティに還元しています。",
+    "btn-explore": "コーヒーを見る",
+    "btn-enquire": "お問い合わせ",
+    "about-title": "私たちのストーリー",
+    "about-subtitle": "2012年、シンプルな使命から始まった",
+    "contact-title": "お問い合わせ",
+    "contact-subtitle": "スペシャルティコーヒー、数量、価格、輸送について",
+    "contact-intro": "カフェ、ロースター、ディストリビューター、輸入業者の方でウガンダのスペシャルティコーヒーをお探しでしたら、ぜひご連絡ください。利用可能なロット、数量、価格、パッケージ、輸送、販売パッケージの詳細をお伝えします。",
+    "btn-whatsapp": "WhatsApp",
+    "btn-email": "メールする",
+    "role-main": "メインコンタクト · 農家と直接連携",
+    "role-comm": "コミュニケーション & ウェブ",
+    "footer-tagline": "ウガンダの小規模農家によるスペシャルティコーヒー。"
+  }
+};
+
+function setLanguage(lang) {
+  const dict = translations[lang] || translations.en;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key]) {
+      el.innerHTML = dict[key];
+    }
+  });
+
+  // Update html lang + direction for Arabic
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  // Update button label
+  const labels = { en: 'EN', zh: '中文', ar: 'ع', fr: 'FR', it: 'IT', ja: '日本' };
+  const currentLangEl = document.getElementById('current-lang');
+  if (currentLangEl) currentLangEl.textContent = labels[lang] || 'EN';
+
+  // Update active state
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+
+  // Save preference
+  localStorage.setItem('gsc-lang', lang);
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('gsc-lang') || 'en';
+  setLanguage(saved);
+
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      setLanguage(lang);
+      document.getElementById('lang-dropdown').classList.remove('open');
+    });
+  });
+});
