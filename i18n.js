@@ -1,4 +1,4 @@
-/* Gorilla Summit Coffee - Simple client-side i18n */
+/* Gorilla Summit Coffee - Client-side i18n */
 
 const translations = {
   en: {
@@ -6,6 +6,7 @@ const translations = {
     "nav-locations": "Locations",
     "nav-coffee": "Our Coffee",
     "nav-impact": "Impact",
+    "nav-partners": "Partners",
     "nav-contact": "Contact",
     "hero-eyebrow": "Specialty Coffee · Uganda",
     "hero-title": "From the Highlands<br>to the World",
@@ -47,19 +48,33 @@ const translations = {
     "service-pack": "Professional packaging ready for export and specialty markets, protecting quality from origin to the roaster or café.",
     "service-support-title": "Farmer Support",
     "service-support": "Seedlings, training, and ongoing technical support so farmers can produce the best quality specialty coffee in Uganda and the Great Lakes region.",
-    "impact-title": "Impact & Sustainability",
+    "impact-title": "Impact & Community",
     "impact-subtitle": "Coffee that lifts communities and protects the land",
-    "impact-carbon-title": "Carbon Neutral Goals",
-    "impact-carbon": "We are working to neutralise our carbon footprint. Over recent years we have changed production systems to conserve water and move toward zero carbon emissions across our locations. Naturals and honeys have been perfected not only for flavour but also for net-zero aspirations.",
-    "impact-organic-title": "Organic Transition",
-    "impact-organic": "Thousands of farmers are in transition toward organic practices. We experiment with live organisms to “clean the soil” in areas where harmful chemicals were used in the past.",
-    "impact-community-title": "Community Investment",
-    "impact-community": "Premium prices paid to farmers translate into better livelihoods. Indirect support includes clean water projects, education, schools and even an accredited university for the wider community.",
+    "impact-intro": "Gorilla Summit Coffee is a social enterprise. Every bag of specialty coffee supports better prices for farmers and real community projects in the highlands of southwest Uganda.",
+    "impact-wages-title": "Living Wages",
+    "impact-wages": "We pay significantly higher prices than traditional middlemen. This allows farming families to earn a living wage and invest in their children’s future.",
+    "impact-water-title": "Clean Water",
+    "impact-water": "Premiums from specialty coffee help fund clean well water projects so communities have safe drinking water close to home.",
+    "impact-edu-title": "Education",
+    "impact-edu": "Support for schools and higher education — including an accredited university — so the next generation has more opportunities beyond the farm.",
+    "impact-carbon-title": "Carbon & Soil",
+    "impact-carbon": "We are moving toward carbon-neutral production, water conservation, and organic transition using living organisms to restore soil health.",
+    "btn-partner": "Partner With Us for Impact",
+    "partners-title": "Our Partners",
+    "partners-subtitle": "Working with people who believe in quality and community",
+    "partner-temple": "Sacramento, California — early partners in training farmers and building quality systems.",
+    "partner-roasters-title": "Specialty Roasters & Distributors",
+    "partner-roasters": "We supply premier roasters and distributors across the United States, Europe and the Middle East.",
+    "partner-farmers-title": "Local Farmer Groups",
+    "partner-farmers": "3,800+ smallholder farmers in Kanungu, Kisoro and Bwindi who are the heart of everything we do.",
+    "partners-cta-text": "Interested in becoming a partner or sourcing our coffee?",
+    "btn-get-touch": "Get in Touch",
     "contact-title": "Get in Touch",
     "contact-subtitle": "Enquire about specialty coffee, volumes, pricing & shipping",
     "contact-intro": "Whether you are a café, roaster, distributor or importer looking for specialty Ugandan coffee, we would love to hear from you. Contact us for details on available lots, volumes, pricing, packaging options, shipping and sales packages.",
     "btn-whatsapp": "WhatsApp Us",
     "btn-email": "Email Us",
+    "email-note": "Or write to us directly:",
     "role-main": "Main contact · Direct with farmers",
     "role-comm": "Communication & Web Presence",
     "footer-tagline": "Specialty coffee from Uganda’s smallholder farmers."
@@ -70,6 +85,7 @@ const translations = {
     "nav-locations": "产地",
     "nav-coffee": "我们的咖啡",
     "nav-impact": "影响力",
+    "nav-partners": "合作伙伴",
     "nav-contact": "联系我们",
     "hero-eyebrow": "精品咖啡 · 乌干达",
     "hero-title": "从高原<br>走向世界",
@@ -111,19 +127,33 @@ const translations = {
     "service-pack": "专业包装，适合出口和精品市场，从产地到烘焙商或咖啡馆全程保护品质。",
     "service-support-title": "农民支持",
     "service-support": "提供幼苗、培训和持续技术支持，帮助农民生产乌干达及大湖地区最好的精品咖啡。",
-    "impact-title": "影响力与可持续性",
+    "impact-title": "影响力与社区",
     "impact-subtitle": "提升社区并保护土地的咖啡",
-    "impact-carbon-title": "碳中和目标",
-    "impact-carbon": "我们正在努力实现碳足迹中和。近年来我们改进了生产系统以节约用水，并在所有产区迈向零碳排放。自然处理和蜜处理不仅为了风味，也为了净零目标。",
-    "impact-organic-title": "有机转型",
-    "impact-organic": "数千名农民正在向有机实践过渡。我们在曾使用有害化学品的地区试验活体生物“清洁土壤”。",
-    "impact-community-title": "社区投资",
-    "impact-community": "支付给农民的溢价转化为更好的生计。间接支持包括清洁水项目、教育、学校甚至一所认证大学。",
+    "impact-intro": "Gorilla Summit Coffee是一家社会企业。每一袋精品咖啡都支持农民获得更好的价格，并资助西南乌干达高地的真实社区项目。",
+    "impact-wages-title": "合理工资",
+    "impact-wages": "我们支付的价格远高于传统中间商，让农家能够获得合理收入并为子女的未来投资。",
+    "impact-water-title": "清洁水源",
+    "impact-water": "精品咖啡的溢价帮助资助清洁水井项目，让社区就近获得安全饮用水。",
+    "impact-edu-title": "教育",
+    "impact-edu": "支持学校和高等教育——包括一所认证大学——让下一代拥有更多机会。",
+    "impact-carbon-title": "碳与土壤",
+    "impact-carbon": "我们正迈向碳中和生产、节约用水，并使用活体生物恢复土壤健康，推进有机转型。",
+    "btn-partner": "与我们合作创造影响",
+    "partners-title": "我们的合作伙伴",
+    "partners-subtitle": "与相信品质与社区的人同行",
+    "partner-temple": "加州萨克拉门托——早期合作伙伴，共同培训农民并建立质量体系。",
+    "partner-roasters-title": "精品烘焙商与分销商",
+    "partner-roasters": "我们向美国、欧洲和中东的顶级烘焙商和分销商供应咖啡。",
+    "partner-farmers-title": "当地农户群体",
+    "partner-farmers": "卡农古、基索罗和布温迪的3,800多名小农户，是我们一切工作的核心。",
+    "partners-cta-text": "有兴趣成为合作伙伴或采购我们的咖啡吗？",
+    "btn-get-touch": "联系我们",
     "contact-title": "联系我们",
     "contact-subtitle": "咨询精品咖啡、数量、价格与运输",
     "contact-intro": "无论您是咖啡馆、烘焙商、分销商还是进口商，如果您在寻找乌干达精品咖啡，我们很乐意与您交流。请联系我们获取现货批次、数量、价格、包装选项、运输和销售方案的详细信息。",
     "btn-whatsapp": "WhatsApp 联系",
     "btn-email": "发送邮件",
+    "email-note": "或直接写信给我们：",
     "role-main": "主要联系人 · 直接对接农民",
     "role-comm": "沟通与网络事务",
     "footer-tagline": "来自乌干达小农户的精品咖啡。"
@@ -134,6 +164,7 @@ const translations = {
     "nav-locations": "المواقع",
     "nav-coffee": "قهوتنا",
     "nav-impact": "التأثير",
+    "nav-partners": "الشركاء",
     "nav-contact": "اتصل بنا",
     "hero-eyebrow": "قهوة مختصة · أوغندا",
     "hero-title": "من المرتفعات<br>إلى العالم",
@@ -142,11 +173,15 @@ const translations = {
     "btn-enquire": "استفسر الآن",
     "about-title": "قصتنا",
     "about-subtitle": "بدأت عام 2012 بمهمة بسيطة",
+    "impact-title": "التأثير والمجتمع",
+    "impact-subtitle": "قهوة ترفع المجتمعات وتحمي الأرض",
+    "partners-title": "شركاؤنا",
     "contact-title": "تواصل معنا",
     "contact-subtitle": "استفسر عن القهوة المختصة والكميات والأسعار والشحن",
-    "contact-intro": "سواء كنت مقهى أو محمصة أو موزعاً أو مستورداً تبحث عن قهوة أوغندية مختصة، يسعدنا التواصل معك. اتصل بنا للحصول على تفاصيل حول الدفعات المتوفرة والكميات والأسعار وخيارات التعبئة والشحن وباقات المبيعات.",
+    "contact-intro": "سواء كنت مقهى أو محمصة أو موزعاً أو مستورداً تبحث عن قهوة أوغندية مختصة، يسعدنا التواصل معك.",
     "btn-whatsapp": "واتساب",
     "btn-email": "راسلنا",
+    "email-note": "أو راسلنا مباشرة:",
     "role-main": "جهة الاتصال الرئيسية · مباشرة مع المزارعين",
     "role-comm": "التواصل والحضور الرقمي",
     "footer-tagline": "قهوة مختصة من صغار المزارعين في أوغندا."
@@ -157,6 +192,7 @@ const translations = {
     "nav-locations": "Régions",
     "nav-coffee": "Notre Café",
     "nav-impact": "Impact",
+    "nav-partners": "Partenaires",
     "nav-contact": "Contact",
     "hero-eyebrow": "Café de Spécialité · Ouganda",
     "hero-title": "Des Hauts Plateaux<br>au Monde Entier",
@@ -165,11 +201,15 @@ const translations = {
     "btn-enquire": "Nous contacter",
     "about-title": "Notre Histoire",
     "about-subtitle": "Commencée en 2012 avec une mission simple",
+    "impact-title": "Impact & Communauté",
+    "impact-subtitle": "Un café qui élève les communautés et protège la terre",
+    "partners-title": "Nos Partenaires",
     "contact-title": "Contactez-nous",
     "contact-subtitle": "Renseignez-vous sur le café de spécialité, volumes, prix et expédition",
-    "contact-intro": "Que vous soyez un café, un torréfacteur, un distributeur ou un importateur à la recherche de café ougandais de spécialité, nous serions ravis d’échanger avec vous. Contactez-nous pour des détails sur les lots disponibles, volumes, tarifs, options d’emballage, expédition et formules commerciales.",
+    "contact-intro": "Que vous soyez un café, un torréfacteur, un distributeur ou un importateur à la recherche de café ougandais de spécialité, nous serions ravis d’échanger avec vous.",
     "btn-whatsapp": "WhatsApp",
     "btn-email": "Envoyer un e-mail",
+    "email-note": "Ou écrivez-nous directement :",
     "role-main": "Contact principal · Direct avec les producteurs",
     "role-comm": "Communication & Présence web",
     "footer-tagline": "Café de spécialité des petits producteurs ougandais."
@@ -180,6 +220,7 @@ const translations = {
     "nav-locations": "Zone di Produzione",
     "nav-coffee": "Il Nostro Caffè",
     "nav-impact": "Impatto",
+    "nav-partners": "Partner",
     "nav-contact": "Contatti",
     "hero-eyebrow": "Caffè Specialty · Uganda",
     "hero-title": "Dagli Altopiani<br>al Mondo",
@@ -188,11 +229,15 @@ const translations = {
     "btn-enquire": "Richiedi informazioni",
     "about-title": "La Nostra Storia",
     "about-subtitle": "Iniziata nel 2012 con una missione semplice",
+    "impact-title": "Impatto e Comunità",
+    "impact-subtitle": "Caffè che eleva le comunità e protegge la terra",
+    "partners-title": "I Nostri Partner",
     "contact-title": "Contattaci",
     "contact-subtitle": "Richiedi informazioni su caffè specialty, volumi, prezzi e spedizioni",
-    "contact-intro": "Sia che tu sia un bar, un torrefattore, un distributore o un importatore alla ricerca di caffè ugandese specialty, saremo lieti di sentirti. Contattaci per dettagli su lotti disponibili, volumi, prezzi, opzioni di confezionamento, spedizioni e pacchetti commerciali.",
+    "contact-intro": "Sia che tu sia un bar, un torrefattore, un distributore o un importatore alla ricerca di caffè ugandese specialty, saremo lieti di sentirti.",
     "btn-whatsapp": "WhatsApp",
     "btn-email": "Invia Email",
+    "email-note": "O scrivici direttamente:",
     "role-main": "Contatto principale · Diretto con i produttori",
     "role-comm": "Comunicazione & Presenza web",
     "footer-tagline": "Caffè specialty dai piccoli produttori dell’Uganda."
@@ -203,6 +248,7 @@ const translations = {
     "nav-locations": "産地",
     "nav-coffee": "私たちのコーヒー",
     "nav-impact": "インパクト",
+    "nav-partners": "パートナー",
     "nav-contact": "お問い合わせ",
     "hero-eyebrow": "スペシャルティコーヒー · ウガンダ",
     "hero-title": "高原から<br>世界へ",
@@ -211,11 +257,15 @@ const translations = {
     "btn-enquire": "お問い合わせ",
     "about-title": "私たちのストーリー",
     "about-subtitle": "2012年、シンプルな使命から始まった",
+    "impact-title": "インパクトとコミュニティ",
+    "impact-subtitle": "コミュニティを高め、土地を守るコーヒー",
+    "partners-title": "パートナー",
     "contact-title": "お問い合わせ",
     "contact-subtitle": "スペシャルティコーヒー、数量、価格、輸送について",
-    "contact-intro": "カフェ、ロースター、ディストリビューター、輸入業者の方でウガンダのスペシャルティコーヒーをお探しでしたら、ぜひご連絡ください。利用可能なロット、数量、価格、パッケージ、輸送、販売パッケージの詳細をお伝えします。",
+    "contact-intro": "カフェ、ロースター、ディストリビューター、輸入業者の方でウガンダのスペシャルティコーヒーをお探しでしたら、ぜひご連絡ください。",
     "btn-whatsapp": "WhatsApp",
     "btn-email": "メールする",
+    "email-note": "または直接メールで：",
     "role-main": "メインコンタクト · 農家と直接連携",
     "role-comm": "コミュニケーション & ウェブ",
     "footer-tagline": "ウガンダの小規模農家によるスペシャルティコーヒー。"
@@ -231,25 +281,20 @@ function setLanguage(lang) {
     }
   });
 
-  // Update html lang + direction for Arabic
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-  // Update button label
   const labels = { en: 'EN', zh: '中文', ar: 'ع', fr: 'FR', it: 'IT', ja: '日本' };
   const currentLangEl = document.getElementById('current-lang');
   if (currentLangEl) currentLangEl.textContent = labels[lang] || 'EN';
 
-  // Update active state
   document.querySelectorAll('.lang-option').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
 
-  // Save preference
   localStorage.setItem('gsc-lang', lang);
 }
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('gsc-lang') || 'en';
   setLanguage(saved);
