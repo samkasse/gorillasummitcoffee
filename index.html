@@ -137,7 +137,7 @@
         <a class="partner-logo-card" href="https://afca.coffee" target="_blank" rel="noopener"><strong>AFCA</strong><span>African Fine Coffees</span></a>
       </div>
       <div class="partners-note">
-        <p data-i18n="partners-note">We work closely with <strong>Temple Coffee Roasters</strong> (Sacramento, CA), the African Fine Coffees Association, and the 3,800+ smallholder farmers who are the heart of everything we do.</p>
+        <p data-i18n="partners-note">We work with these partners in different ways — collaboration, reference, co-sales and shared quality work — alongside the 3,800+ smallholder farmers who are the heart of everything we do.</p>
       </div>
       <div class="partners-cta"><a href="#contact" class="btn btn-outline" data-i18n="btn-get-touch">Get in Touch</a></div>
     </div>
@@ -191,12 +191,10 @@
 
   <script src="i18n.js"></script>
   <script>
-    // Mobile nav
     const toggle = document.getElementById('nav-toggle');
     const nav = document.getElementById('main-nav');
     if (toggle && nav) toggle.addEventListener('click', () => nav.classList.toggle('open'));
 
-    // Language dropdown
     const langBtn = document.getElementById('lang-btn');
     const langDropdown = document.getElementById('lang-dropdown');
     if (langBtn && langDropdown) {
@@ -207,16 +205,11 @@
       document.addEventListener('click', () => langDropdown.classList.remove('open'));
     }
 
-    // Reveal contact details only on request
     const revealBtn = document.getElementById('reveal-contact');
     const details = document.getElementById('contact-details');
     if (revealBtn && details) {
       revealBtn.addEventListener('click', () => {
         details.classList.toggle('hidden');
-        revealBtn.textContent = details.classList.contains('hidden') 
-          ? (document.querySelector('[data-i18n="btn-reveal"]')?.getAttribute('data-i18n') || 'Show contact details')
-          : 'Hide details';
-        // Better: use i18n key after toggle
         if (details.classList.contains('hidden')) {
           revealBtn.setAttribute('data-i18n', 'btn-reveal');
           if (window.setLanguage) setLanguage(localStorage.getItem('gsc-lang') || 'en');
