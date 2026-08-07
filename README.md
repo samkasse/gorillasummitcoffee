@@ -27,37 +27,24 @@ These are now live in `styles.css` as CSS variables.
 ## Current Status (Aug 2026)
 
 - [x] GitHub repository created
-- [x] Clean multi-section single-page site with real content from the old website
+- [x] Clean multi-section site with real content from the old website
 - [x] Official brand colour palette applied
-- [x] Logo reference wired into header (place `logo.png` in `assets/images/`)
-- [ ] Upload final logo.png (and other photos) into `assets/images/`
-- [ ] Domain fully pointed / active on Cloudflare
-- [ ] Cloudflare Pages project connected and live
-- [ ] Final content & image polish
+- [x] Logo (`logo.png`) present and wired into header + favicon
+- [x] Hundreds of photos already in `assets/images/` (image_001 … image_380+)
+- [x] Media page expanded to show more of the existing photography
+- [x] Hero background set to a working existing image
+- [ ] Domain fully pointed / active on Cloudflare Pages
+- [ ] Cloudflare Pages project connected and live on gorillasummitcoffee.com
+- [ ] Final image selection & compression (optional cleanup of very large originals)
 - [ ] Old site taken offline / redirects set
 
 ---
 
-## Asset Folder Structure
+## Asset Folder
 
-```
-gorillasummitcoffee/
-├── index.html
-├── styles.css
-├── README.md
-├── assets/
-│   └── images/
-│       ├── logo.png          ← official circular logo (required)
-│       ├── favicon.png
-│       ├── hero.jpg          (highland landscape)
-│       ├── kanungu.jpg
-│       ├── kisoro.jpg
-│       ├── bwindi.jpg
-│       └── ...other photos
-└── (future: robots.txt, sitemap.xml)
-```
+Photos live in `assets/images/`. Many large original files are already committed. The site currently uses a selection of them on the homepage, locations, media and impact pages.
 
-**Action needed:** Upload the clean circular logo as `assets/images/logo.png` (PNG with transparent background preferred, or the versions you already shared).
+**Note on file sizes:** Cloudflare Pages allows max **25 MiB per individual file**. Most current images are under this limit. For best performance, compress the largest ones later (target ~300–800 KB for web display).
 
 ---
 
@@ -74,31 +61,11 @@ gorillasummitcoffee/
 
 ---
 
-## Migration Checklist
+## Next Steps
 
-### Content & Assets
-- [x] Extract core story, locations, impact and contact details
-- [x] Official colour palette locked from logo guidelines
-- [ ] Place final `logo.png` in `assets/images/`
-- [ ] Collect / organise photography
-- [ ] Open Graph / social meta images
+1. Connect this repo to Cloudflare Pages and deploy (see steps above).
+2. Point the domain (nameservers or CNAME) so the new site is live.
+3. (Optional) Select the best 20–30 photos, compress them, and we can replace the bulk originals for faster loading.
+4. Once live, we can decommission the old Wix-style site.
 
-### Technical
-- [ ] Confirm domain nameservers point to Cloudflare and status is Active
-- [ ] Connect this GitHub repo to Cloudflare Pages and deploy
-- [ ] Attach custom domain(s) and verify HTTPS
-- [ ] Test mobile + desktop
-
-### Launch
-- [ ] Final content review
-- [ ] Soft launch / preview URL testing
-- [ ] Announce new site
-- [ ] Decommission old site + redirects
-
----
-
-## Next Immediate Step
-
-1. Upload the official logo as **`assets/images/logo.png`** (you already have clean versions).
-2. Tell me the Cloudflare domain status (or share a screenshot).
-3. I will then finalise any remaining wiring and we deploy together.
+Tell me when the Cloudflare Pages project is connected or if you want more photos organised / renamed.
