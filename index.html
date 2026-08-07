@@ -91,32 +91,46 @@
       </div>
       <div class="locations-grid">
         <article class="location-card">
-          <img src="assets/images/image_040.jpg" alt="Coffee farms in Kanungu">
+          <img src="assets/images/image_023.png" alt="Coffee farms in Kanungu" loading="lazy">
           <h3>Kanungu</h3>
-          <p class="location-tag" data-i18n="loc-kanungu-tag">Main production heartland</p>
-          <p data-i18n="loc-kanungu">Our primary farming communities sit in the rolling hills of Kanungu District. This is where most of our cherries are grown and where our processing facility is based.</p>
-          <a class="card-link" href="https://www.ugandawildlife.org/" target="_blank" rel="noopener">Explore the region →</a>
+          <p class="location-tag">Main production · Processing</p>
+          <p>Primary farming communities in the rolling hills of Kanungu District. Most of our cherries are grown here and our processing facility is based in this heartland.</p>
+          <a class="card-link" href="https://kanungu.go.ug/" target="_blank" rel="noopener">Kanungu District →</a>
         </article>
         <article class="location-card">
-          <img src="assets/images/image_030.png" alt="Drying beds in the highlands">
+          <img src="assets/images/image_025.jpg" alt="Kisoro highlands and volcanic soils" loading="lazy">
           <h3>Kisoro</h3>
-          <p class="location-tag" data-i18n="loc-kisoro-tag">Volcanic soils · Lake Mutanda</p>
-          <p data-i18n="loc-kisoro">Known for Lake Mutanda and the dramatic peaks of the Virunga range. Rich volcanic soil produces distinctive cup profiles. Gateway to gorilla trekking.</p>
+          <p class="location-tag">Volcanic soils · Lake Mutanda</p>
+          <p>Known for Lake Mutanda and the dramatic peaks of the Virunga range. Rich volcanic soil produces distinctive cup profiles. Gateway to gorilla trekking.</p>
           <a class="card-link" href="https://www.ugandawildlife.org/explore-our-parks/parks-by-name-a-z/mgahinga-gorilla-national-park" target="_blank" rel="noopener">Mgahinga & Kisoro →</a>
         </article>
         <article class="location-card">
-          <img src="assets/images/image_080.jpg" alt="Coffee trees near Bwindi">
+          <img src="assets/images/image_038.png" alt="Bwindi area coffee and forest" loading="lazy">
           <h3>Bwindi</h3>
-          <p class="location-tag" data-i18n="loc-bwindi-tag">Gorilla habitat · High altitude</p>
-          <p data-i18n="loc-bwindi">On the edge of Bwindi Impenetrable Forest — home to half of the world’s remaining mountain gorillas. Excellent conditions for specialty coffee.</p>
+          <p class="location-tag">Gorilla habitat · High altitude</p>
+          <p>On the edge of Bwindi Impenetrable Forest — home to half of the world’s remaining mountain gorillas. Excellent conditions for specialty coffee.</p>
           <a class="card-link" href="https://www.ugandawildlife.org/explore-our-parks/parks-by-name-a-z/bwindi-impenetrable-national-park" target="_blank" rel="noopener">Bwindi National Park →</a>
         </article>
         <article class="location-card">
-          <img src="assets/images/image_150.jpeg" alt="Export ready coffee">
+          <img src="assets/images/image_041.png" alt="Kampala logistics and HQ" loading="lazy">
           <h3>Kampala</h3>
-          <p class="location-tag" data-i18n="loc-kampala-tag">Headquarters · Logistics hub</p>
-          <p data-i18n="loc-kampala">Our main offices coordinate exports, quality control and relationships with international buyers while staying connected to the highland communities.</p>
+          <p class="location-tag">Headquarters · Logistics</p>
+          <p>Our main offices coordinate exports, quality control and relationships with international buyers while staying connected to the highland communities.</p>
           <a class="card-link" href="https://www.kcca.go.ug/" target="_blank" rel="noopener">Kampala Capital City →</a>
+        </article>
+        <article class="location-card">
+          <img src="assets/images/image_096.png" alt="Roasting and value addition" loading="lazy">
+          <h3>Mbale</h3>
+          <p class="location-tag">Roasting · Mt Elgon region</p>
+          <p>Roasting and value-addition linked to the fertile slopes of Mount Elgon. Part of our network for specialty processing and preparation for export markets.</p>
+          <a class="card-link" href="https://www.ugandawildlife.org/" target="_blank" rel="noopener">Explore the region →</a>
+        </article>
+        <article class="location-card">
+          <img src="assets/images/image_097.jpeg" alt="Western Uganda processing" loading="lazy">
+          <h3>Bushenyi</h3>
+          <p class="location-tag">Roasting · Western Uganda</p>
+          <p>Roasting and processing capacity in western Uganda, supporting quality from farm through to finished specialty coffee ready for partners worldwide.</p>
+          <a class="card-link" href="https://www.bushenyi.go.ug/" target="_blank" rel="noopener">Bushenyi District →</a>
         </article>
       </div>
     </div>
@@ -150,12 +164,10 @@
         <p data-i18n="contact-subtitle">Enquire about specialty coffee, volumes, pricing & shipping</p>
       </div>
       <p class="contact-intro" data-i18n="contact-intro">Whether you are a café, roaster, distributor or importer looking for specialty Ugandan coffee, we would love to hear from you.</p>
-      
       <div class="contact-actions">
         <a href="https://wa.me/256772314778?text=Hello%20Ian%2C%20I%20am%20interested%20in%20Gorilla%20Summit%20Coffee." class="btn" target="_blank" rel="noopener" data-i18n="btn-whatsapp">Chat on WhatsApp</a>
         <button type="button" class="btn btn-outline" id="reveal-contact" data-i18n="btn-reveal">Show contact details</button>
       </div>
-
       <div class="contact-details hidden" id="contact-details">
         <div class="contact-person">
           <strong>Ian Abigaba</strong>
@@ -194,7 +206,6 @@
     const toggle = document.getElementById('nav-toggle');
     const nav = document.getElementById('main-nav');
     if (toggle && nav) toggle.addEventListener('click', () => nav.classList.toggle('open'));
-
     const langBtn = document.getElementById('lang-btn');
     const langDropdown = document.getElementById('lang-dropdown');
     if (langBtn && langDropdown) {
@@ -204,7 +215,6 @@
       });
       document.addEventListener('click', () => langDropdown.classList.remove('open'));
     }
-
     const revealBtn = document.getElementById('reveal-contact');
     const details = document.getElementById('contact-details');
     if (revealBtn && details) {
